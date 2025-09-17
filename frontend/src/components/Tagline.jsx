@@ -74,7 +74,7 @@ function TaglineGenerator() {
     setTaglines([]);
 
     try {
-      const response = await fetch("http://localhost:4000/api/tagline", {
+      const response = await fetch("https://brandcraft-4421.onrender.com/api/tagline", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ companyName, industry }),

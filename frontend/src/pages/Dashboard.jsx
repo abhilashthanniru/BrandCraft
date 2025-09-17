@@ -11,7 +11,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("http://localhost:4000/api/users/me", {
+        const res = await fetch("https://brandcraft-4421.onrender.com/api/users/me", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

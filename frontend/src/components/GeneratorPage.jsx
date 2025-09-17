@@ -58,7 +58,7 @@ const GeneratorPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/generate-logo",
+        "https://brandcraft-4421.onrender.com/api/generate-logo",
         formData
       );
 
@@ -90,7 +90,7 @@ const GeneratorPage = () => {
     setIsSaving(true);
 
     try {
-      await axios.post("http://localhost:4000/api/logos", generatedLogo);
+      await axios.post("https://brandcraft-4421.onrender.com/api/logos", generatedLogo);
       alert("Logo saved successfully!");
     } catch (error) {
       console.error(

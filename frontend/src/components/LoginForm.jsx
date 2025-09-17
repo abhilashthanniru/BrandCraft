@@ -16,7 +16,7 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/users/login",
+        "https://brandcraft-4421.onrender.com/api/users/login",
         form
       );
       localStorage.setItem("token", res.data.token);
